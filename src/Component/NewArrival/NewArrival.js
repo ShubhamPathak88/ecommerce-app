@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './NewArrival.css'
 
 import b1 from '../../assets/images/blog/b1.jpg'
@@ -15,6 +15,16 @@ import arrivals8 from '../../assets/images/collection/arrivals8.png'
 import SingleNewArrival from '../SingleNewArrival/SingleNewArrival'
 import { NewArrivalObject } from '../Feature/Object'
 const NewArrival = () => {
+	
+	const[data,setData]=useState([])
+
+    const AddItem = (id)=>{
+        let newData = NewArrivalObject.filter((item)=>{
+            return item.id==id
+        })
+		setData([...data,newData[0]])	
+    }
+   
   return<>
   <section id="new-arrivals" className="new-arrivals">
 			<div className="container">
@@ -23,7 +33,7 @@ const NewArrival = () => {
 				</div>
 				<div className="new-arrivals-content">
 					<div className="row">
-						{NewArrivalObject.map((item, key)=><SingleNewArrival item={item}/>)}
+						{NewArrivalObject.map((item, key)=><SingleNewArrival onclick={AddItem} item={item}/>)}
 					</div>
 				</div>
 				

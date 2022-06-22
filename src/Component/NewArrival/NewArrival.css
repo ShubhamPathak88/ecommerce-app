@@ -62,7 +62,7 @@
     line-height: 30px;
     text-align: center;
 }
-.sale p{color: rgb(6, 6, 6) !important;font-weight: 500;font-size:14px;line-height: 2.2;}
+.sale p{color: #fff;font-weight: 500;font-size:14px;line-height: 2.2;}
 
 .sale.bg-1{background: #d8924c;}
 .sale.bg-2{background: #47d93c;}

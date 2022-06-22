@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 
 function Menu() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" sticky="top">
       <Container fluid>
         <Navbar.Brand href="#">SineMkt.</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -34,7 +34,9 @@ function Menu() {
                 Something else here
               </NavDropdown.Item>
             </NavDropdown>
-           
+            <NavLink className="nav-link" to="Cart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+</svg></NavLink>
           </Nav>
           <Form className="d-flex">
             <Form.Control
@@ -45,6 +47,7 @@ function Menu() {
             />
             <Button variant="outline-success">Search</Button>
           </Form>
+        
         </Navbar.Collapse>
       </Container>
     </Navbar>

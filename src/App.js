@@ -18,6 +18,7 @@ import './style.css';
 import './responsive.css'
 import {Route,Routes,BrowserRouter }from 'react-router-dom'
 import Home from './pages/home';
+import Cart from './Component/Cart/Cart';
 function App() {
   return<>
   <BrowserRouter>
@@ -28,6 +29,8 @@ function App() {
       <Route path='/NewArrival' element={<NewArrival/>}/>
       <Route path='/Blog' element={<Blog/>}/>
       <Route path='/Contact' element={<Contact/>}/>
+      <Route path='/Cart' element={<Cart/>}/>
+       
     </Routes>
     <Footer />
   </BrowserRouter>

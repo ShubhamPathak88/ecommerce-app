@@ -1,4 +1,4 @@
-import img1 from '../../assets/images/collection/arrivals1.png';
+import img1 from '../../assets/images/collection/arrivals1.png';    
 import img2 from '../../assets/images/collection/arrivals2.png';
 import img3 from '../../assets/images/collection/arrivals3.png';
 import img4 from '../../assets/images/collection/arrivals4.png';
@@ -65,3 +65,4 @@ export const NewArrivalObject=[
     }
     
 ]
+  

@@ -1,6 +1,10 @@
-import React from 'react'
+import {React} from 'react'
 import { NewArrivalObject } from '../Feature/Object'
+
 const SingleNewArrival = (props) => {
+  
+
+
   return (
     <>
     <div className='col-lg-3'>
@@ -20,7 +24,7 @@ const SingleNewArrival = (props) => {
                     
                     <p>
                         <span className="lnr lnr-cart"></span>
-                        <a href="#">add <span>to </span> cart</a>
+                        <p onClick={()=>props.onclick(props.item.id)} >add <span>to </span> cart</p>
                     </p>
                     <p className="arrival-review pull-right">
                         <span className="lnr lnr-heart"></span>
